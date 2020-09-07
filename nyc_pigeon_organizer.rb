@@ -33,7 +33,6 @@ def nyc_pigeon_organizer(data)
     end
   end
   ultimate
-  binding.pry
 end
 
 #finalname[name][key].push(key2)
