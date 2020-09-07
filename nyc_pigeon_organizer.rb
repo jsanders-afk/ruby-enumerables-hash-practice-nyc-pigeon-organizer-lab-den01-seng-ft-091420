@@ -19,7 +19,7 @@ data = {
 }
 
 def nyc_pigeon_organizer(data)
-  data.each_with_object({}) do |(key1 ,val1), final_array|
+  ultimate = data.each_with_object({}) do |(key1 ,val1), final_array|
     val1.each do |key2,val2|
       val2.each do |name|
         if !final_array[name]
@@ -32,6 +32,7 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
+  ultimate
   binding.pry
 end
 
